@@ -1,4 +1,4 @@
-1)
+/* 1)
  1757. Recyclable and Low Fat Products
  
 Write a solution to find the ids of products that are both low fat and recyclable.
@@ -33,10 +33,10 @@ Explanation: Only products 1 and 3 are both low fat and recyclable.
 
 
 
-Solution:
+Solution:*/
 
 select product_id from products where low_fats='Y' and recyclable ="Y";
-
+/*
 ----------------------------------------------------------------------------------------------------------------------------------------
 2)
 584. Find Customer Referee
@@ -85,11 +85,11 @@ Output:
 | Zack |
 +------+
 
-Solution:
+Solution:*/
 
 select name from customer where referee_id != 2 or  referee_id is null ;
 
--------------------------------------------------------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------------------------------------------------------
 3)
 595. Big Countries
 Table: World
@@ -142,9 +142,9 @@ Output:
 +-------------+------------+---------+
 
 
-Solution:
+Solution: */
 select name,population,area from world where area >= 3000000 or population >=25000000;
-----------------------------------------------------------------------------------------------------------------------------------------\
+/*----------------------------------------------------------------------------------------------------------------------------------------\
 4)
 1148. Article Views I
 Table: Views
@@ -193,11 +193,11 @@ Output:
 | 7    |
 +------+
 
-Solution:
-1.select distinct(author_id) as id from views where author_id=viewer_id order by author_id;
-2.select distinct(viewer_id) as id from views where author_id = viewer_id order by viewer_id;
+-- Solution:*/
+select distinct(author_id) as id from views where author_id=viewer_id order by author_id;
+select distinct(viewer_id) as id from views where author_id = viewer_id order by viewer_id;
 
------------------------------------------------------------------------------------------------------------------------------------------
+/*-----------------------------------------------------------------------------------------------------------------------------------------
 5)
 Table: Tweets
 
@@ -239,7 +239,7 @@ Explanation:
 Tweet 1 has length = 14. It is a valid tweet.
 Tweet 2 has length = 32. It is an invalid tweet.
 
-Solution:
+Solution:*/
 select tweet_id from tweets where length(content)>=15;
 -----------------------------------------------------------------------------------------------------------------------------------
 
