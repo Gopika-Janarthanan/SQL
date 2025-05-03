@@ -1,4 +1,4 @@
-6)
+/*6)
 1683. Invalid Tweets
 Table: Tweets
 
@@ -40,11 +40,11 @@ Explanation:
 Tweet 1 has length = 14. It is a valid tweet.
 Tweet 2 has length = 32. It is an invalid tweet.
 
-Solution:
+Solution:*/
 
 select tweet_id from tweets where length(content)>15;
 ------------------------------------------------------------------------------------------------------------------------------------------
-7)
+/*7)
 1378. Replace Employee ID With The Unique Identifier
 Table: Employees
 
@@ -115,12 +115,12 @@ The unique ID of Meir is 2.
 The unique ID of Winston is 3.
 The unique ID of Jonathan is 1.
 
-Solution:
+Solution:*/
 SELECT Employees.name, EmployeeUNI.unique_id
 FROM Employees
 LEFT JOIN EmployeeUNI ON Employees.id = EmployeeUNI.id;
 ------------------------------------------------------------------------------------------------------------------------------------------
-8)
+/*8)
 1068. Product Sales Analysis I
 Table: Sales
 
@@ -191,7 +191,7 @@ From sale_id = 1, we can conclude that Nokia was sold for 5000 in the year 2008.
 From sale_id = 2, we can conclude that Nokia was sold for 5000 in the year 2009.
 From sale_id = 7, we can conclude that Apple was sold for 9000 in the year 2011.
 
-Solution:
+Solution:*/
 
 select product.product_name, Sales.year, Sales.price
 from Product
