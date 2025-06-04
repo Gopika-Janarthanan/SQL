@@ -43,5 +43,5 @@ Output:
 | 3         | 2016-03-02  |
 +-----------+-------------+"
 
---Solutio :
+--Solution :
 select distinct(player_id) , min(event_date) as first_login from activity group by player_id;
