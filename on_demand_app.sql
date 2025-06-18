@@ -1,3 +1,7 @@
+/*SQL Use Case:
+In an On-Demand-like app database, users need to retrieve a list of 5 top-rated service providers for home cleaning services based on user ratings.
+*/
+
 use demo;
 CREATE TABLE ServiceProviders (
     provider_id INT PRIMARY KEY,
